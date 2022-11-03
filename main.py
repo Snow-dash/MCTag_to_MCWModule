@@ -59,7 +59,7 @@ if __name__ == "__main__":
         print("usage: main.py [path]")
     else:
         tagdic = {}
-        temp = sorted(sys.argv)
+        temp = sorted(sys.argv[1:])
         for pa in temp:
             tagdic = tool.load(pa, tagdic)
 
