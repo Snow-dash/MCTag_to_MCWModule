@@ -55,6 +55,6 @@ def load(path,out=None):  # \data\minecraft\tags
 def sort(dic):
     for tp in dic:
         for tag in dic[tp]:
-            dic[tp][tag] = sorted(dic[tp][tag])
+            dic[tp][tag] = sorted(list(set(dic[tp][tag])))
     return dic
 
